@@ -1,4 +1,4 @@
-# Color-Flipper ![](https://img.shields.io/badge/color--flipper-v1.0.0--stable-blue)
+# TodoList-React ![](https://img.shields.io/badge/todolist--react-v1.0.0--stable-blue)
 
 Hello, this is my first React project. please check it out and tell me the issues
 
