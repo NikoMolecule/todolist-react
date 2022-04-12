@@ -9,7 +9,7 @@ const Item = ({
   editStatus,
   editStatusFunc,
   trackedId,
-  editInput,
+  cancelInput
 }) => {
   const handleRemove = (id) => {
     const newList = items.filter((a) => a.id !== id);
@@ -21,7 +21,7 @@ const Item = ({
   const handleEdit = (id) => {
     trackedId(id);
     if (editStatus) {
-      editInput(name);
+      cancelInput()
     }
     editStatusFunc(!editStatus);
   };

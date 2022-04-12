@@ -88,7 +88,12 @@ const App = () => {
               items={items}
               editStatus={isEditing}
               editStatusFunc={setIsEditing}
-              trackedId={(id) => setCalledItem(id)}
+              trackedId={(id) => {
+                setCalledItem(id)
+                const filterNameById = items.find(item => item.id === id)
+                setInput(filterNameById.name)
+              }}
+              cancelInput={() => setInput("")}
               setInputValue={setInput}
             />
           );
